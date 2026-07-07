@@ -243,7 +243,7 @@ mis-finanzas-api/
 ## 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/PocketExpense.git
+git clone https://github.com/erick30-rey/Mis-finanzas-fullstack.git
 ```
 
 ## 2. Backend
