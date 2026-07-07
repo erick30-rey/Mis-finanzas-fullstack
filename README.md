@@ -311,13 +311,13 @@ screenshots/
 
 ## Login
 
-![Login](screenshots/login.png)
+![Login](screenshots/Login.png)
 
 ---
 
 ## Home
 
-![Dashboard](screenshots/home.png)
+![Dashboard](screenshots/Home.png)
 ![Dashboard](screenshots/Home.02.png)
 ![Dashboard](screenshots/Home.03.png)
 
@@ -410,7 +410,11 @@ El proyecto utiliza **Git** y **GitHub** como sistema de control de versiones pa
 
 # Autores
 
-**Manuel Mora, Erick Reynoso, Enmanuel Jiménez, Guillermo Adonis Mercedes, Leodis Reynaldo Rodriguez**
+- Manuel Mora
+- Erick Reynoso
+- Enmanuel Jiménez
+- Guillermo Adonis Mercedes
+- Leodis Reynaldo Rodríguez
 
 Proyecto desarrollado con fines académicos.
 
