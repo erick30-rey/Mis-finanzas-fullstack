@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --ion-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --ion-color-primary: #3B82F6;
+  --ion-color-primary-rgb: 59, 130, 246;
+  --ion-color-secondary: #22C55E;
+  --ion-color-secondary-rgb: 34, 197, 94;
+  --ion-color-tertiary: #0EA5E9;
+  --ion-color-tertiary-rgb: 14, 165, 233;
+  --ion-color-success: #10B981;
+  --ion-color-warning: #F59E0B;
+  --ion-color-danger: #EF4444;
+  --ion-background-color: #071021;
+  --ion-background-color-rgb: 7, 16, 33;
+  --ion-text-color: #E2E8F0;
+  --ion-text-color-rgb: 226, 232, 240;
+  --ion-toolbar-background: rgba(7, 16, 33, 0.92);
+  --ion-toolbar-color: #E2E8F0;
+  --ion-toolbar-border-color: rgba(255, 255, 255, 0.08);
+  --ion-card-background: rgba(255, 255, 255, 0.06);
+  --ion-card-border-color: rgba(255, 255, 255, 0.10);
+  --ion-item-background: transparent;
+  --ion-item-border-color: rgba(255, 255, 255, 0.12);
+  --ion-border-radius: 22px;
+  --ion-border-radius-md: 22px;
+  --ion-button-border-radius: 999px;
+}
+
+html, body {
+  min-height: 100%;
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.10), transparent 24%),
+              radial-gradient(circle at right, rgba(14, 165, 233, 0.08), transparent 20%),
+              linear-gradient(180deg, #050b19 0%, #071021 46%, #0f172a 100%);
+  color: var(--ion-text-color);
+  font-family: var(--ion-font-family);
+}
+
+ion-app, ion-page, ion-content {
+  background: transparent !important;
+}
+
+ion-content {
+  --background: linear-gradient(180deg, rgba(var(--ion-background-color-rgb), 0.02), rgba(7,16,33,0.02));
+}
+
+ion-header ion-toolbar,
+.toolbar-background {
+  backdrop-filter: blur(18px);
+  background: rgba(7, 16, 33, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+ion-menu {
+  --background: #07101f;
+}
+
+ion-menu .menu-inner {
+  background: linear-gradient(180deg, rgba(7, 16, 33, 0.98), rgba(8, 17, 32, 0.98));
+}
+
+ion-item {
+  --background: transparent;
+  --border-style: solid;
+  --border-width: 1px;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--ion-text-color);
+}
+
+ion-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+ion-card {
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(12px);
+}
+
+ion-card.ion-color {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+ion-button {
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.16);
+}
+
+ion-button.ion-color-primary,
+ion-button[color="primary"] {
+  --background: #2067ff;
+  --background-hover: #1d5de0;
+  --background-focused: #1d5de0;
+  --color: #fff;
+}
+
+ion-button.ion-color-secondary,
+ion-button[color="secondary"] {
+  --background: #22c55e;
+  --background-hover: #16a34a;
+  --color: #fff;
+}
+
+ion-button[fill="outline"] {
+  --border-width: 1px;
+  --border-color: rgba(255, 255, 255, 0.16);
+  --background: transparent;
+}
+
+ion-button[fill="clear"] {
+  --color: #cbd5e1;
+}
+
+ion-segment,
+ion-segment-button {
+  --background: rgba(255, 255, 255, 0.04);
+  --color: #cbd5e1;
+  --border-radius: 18px;
+  --indicator-color: #3b82f6;
+}
+
+ion-segment-button.ion-activated {
+  --background: rgba(59, 130, 246, 0.18);
+  --color: #fff;
+}
+
+ion-fab-button {
+  --background: #3b82f6;
+  box-shadow: 0 20px 42px rgba(59, 130, 246, 0.24);
+}
+
+ion-input,
+ion-textarea,
+ion-select,
+ion-datetime,
+ion-datetime-button {
+  --background: rgba(255, 255, 255, 0.04);
+  --color: #e2e8f0;
+  --placeholder-color: rgba(226, 232, 240, 0.6);
+  --border-color: rgba(255, 255, 255, 0.12);
+  --border-radius: 18px;
+  --padding-start: 14px;
+  --padding-end: 14px;
+}
+
+ion-input,
+ion-textarea {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+ion-card-content {
+  padding: 22px;
+}
+
+ion-list {
+  padding-inline-start: 0;
+}
+
+ion-label,
+ion-text,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--ion-text-color);
+}
+
+ion-icon {
+  color: inherit !important;
+  fill: currentColor;
+}
+
+/* Date/datetime button visibility */
+ion-datetime-button,
+ion-datetime {
+  --color: rgba(226,232,240,0.92);
+  color: rgba(226,232,240,0.92);
+}
+
+/* Ensure content has enough bottom padding to not be hidden by persistent bottom tabs */
+ion-content.fullscreen {
+  padding-bottom: calc(88px + env(safe-area-inset-bottom));
+}
+
+/* Keep primary buttons above background elements */
+ion-button {
+  position: relative;
+  z-index: 2;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 20%),
+    radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.14), transparent 18%);
+  pointer-events: none;
+}

@@ -1,0 +1,30 @@
+
+# Node / React / Ionic
+node_modules/
+dist/
+build/
+www/
+.env
+.env.local
+
+# Java / Maven / Spring Boot
+target/
+*.jar
+*.war
+*.ear
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker / Base de datos
+postgres_data/
+*.db

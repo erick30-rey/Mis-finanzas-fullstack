@@ -1,0 +1,143 @@
+/* Responsive styles for Home page */
+.home-content {
+  padding-bottom: 110px; /* leave space for FAB and bottom nav */
+}
+
+.home-hero {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 220px;
+}
+
+.hero-left { text-align: left; }
+
+.balance-card-wrap { display: flex; align-items: center; justify-content: center; }
+
+.hero-balance {
+  font-size: 34px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+.hero-kpis {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.kpi {
+  padding: 8px 12px;
+  border-radius: 12px;
+  min-width: 110px;
+}
+
+.balance-card-wrap {
+  width: 120px;
+  min-width: 100px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.kpi-grid > div { text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.chart-card {
+  border-radius: 18px;
+  margin-bottom: 16px;
+}
+
+.chart-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: nowrap; /* keep controls on one line */
+  overflow-x: auto; /* allow horizontal scroll if too tight */
+  -webkit-overflow-scrolling: touch;
+}
+
+.chart-controls ion-segment {
+  flex: 1 1 160px;
+  min-width: 160px;
+}
+
+.chart-controls ion-select {
+  flex: 1 1 160px;
+  min-width: 160px;
+}
+
+.chart-controls ion-select, .chart-controls ion-segment {
+  max-width: 360px;
+}
+
+.chart-controls ion-buttons {
+  flex: 0 0 auto;
+}
+
+.chart-controls ion-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.chart-controls ion-button {
+  --padding-start: 6px;
+  --padding-end: 6px;
+  height: 36px;
+}
+
+@media (max-width: 600px) {
+  .chart-controls {
+    /* still inline but allow scrolling */
+    padding-bottom: 6px;
+  }
+  .chart-controls ion-select, .chart-controls ion-segment {
+    min-width: 140px;
+  }
+  .chart-controls ion-buttons {
+    margin-right: 6px;
+  }
+}
+
+.transactions-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.transactions-title { justify-content: center; gap: 12px; }
+
+.transactions-list {
+  margin-bottom: 120px; /* extra space so FAB doesn't overlap items */
+}
+
+.home-fab {
+  z-index: 1200;
+}
+
+@media (max-width: 600px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+  .balance-card-wrap {
+    width: 100%;
+    min-width: 0;
+  }
+  .hero-left {
+    order: 1;
+    text-align: center;
+  }
+  .balance-card-wrap { margin: 0 auto; }
+  .transactions-title { flex-direction: column; }
+}
