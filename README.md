@@ -413,8 +413,7 @@ El proyecto utiliza **Git** y **GitHub** como sistema de control de versiones pa
 - Manuel Mora
 - Erick Reynoso
 - Enmanuel Jiménez
-- Guillermo Adonis Mercedes
-- Leodis Reynaldo Rodríguez
+
 
 Proyecto desarrollado con fines académicos.
 
